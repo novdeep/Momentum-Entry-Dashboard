@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NSE Momentum Entry Scanner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>NSE Momentum Entry Scanner</h1>
+      <p>Find stocks with strong momentum + reasonable valuation (P/E < 30, P/B < 5, Market Cap > ₹1,500 Cr)</p>
+      <button id="refreshBtn">Refresh Data</button>
+      <div id="lastUpdated" class="updated"></div>
+    </header>
+
+    <div class="summary">
+      <div>Stocks Scanned: <span id="scannedCount">0</span></div>
+      <div>Strong Entry Signals: <span id="strongCount" class="strong">0</span></div>
+    </div>
+
+    <table id="resultsTable">
+      <thead>
+        <tr>
+          <th>Stock</th>
+          <th>Price</th>
+          <th>Score</th>
+          <th>RSI</th>
+          <th>Volume Surge</th>
+          <th>Trend</th>
+          <th>Hammer (Wk)</th>
+          <th>P/E</th>
+          <th>P/B</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- Filled by JavaScript -->
+      </tbody>
+    </table>
+
+    <div class="footer">
+      <p>Data from Yahoo Finance • Strategy: 50/200 SMA + RSI + Volume + Weekly Hammer • Refresh for latest data</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
