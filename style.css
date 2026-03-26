@@ -1,0 +1,106 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+header {
+  padding: 25px;
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 8px 0;
+  font-size: 2.2rem;
+}
+
+button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background: #f8fafc;
+  font-weight: bold;
+}
+
+.strong {
+  color: #16a34a;
+  font-size: 1.3rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 14px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background: #f1f5f9;
+  font-weight: 600;
+}
+
+tr:hover {
+  background: #f8fafc;
+}
+
+.score-high {
+  background: #dcfce7;
+  font-weight: bold;
+  color: #166534;
+}
+
+.score-medium {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.hammer-yes {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.updated {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.footer {
+  padding: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #64748b;
+  background: #f8fafc;
+}
